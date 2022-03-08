@@ -8,7 +8,7 @@ int getPosOffset(
     TextBuffer const *const tb,
     TextBufferPos pos
 ) {
-  // TODO
+  /* TODO */
   return 0;
 }
 
@@ -17,7 +17,7 @@ int getOffsetPos(
     TextBuffer const *const tb,
     size_t offset
 ) {
-  // TODO
+  /* TODO */
   return 0;
 }
 
@@ -26,7 +26,7 @@ TextBuffer *allocTextBuffer(
     TextBufferOpt const options,
     char const *const init_text
 ) {
-  // TODO
+  /* TODO */
   TextBuffer *result;
   return result;
 }
@@ -36,17 +36,17 @@ int initTextBuffer(
     TextBufferOpt const options,
     char const *const init_text
 ) {
-  // TODO
+  /* TODO */
   return 0;
 }
 
 /* Destroy a text buffer */
 void freeTextBuffer(TextBuffer *const tb) {
-  // TODO
+  /* TODO */
 }
 
 int deinitTextBuffer(TextBuffer **const tb) {
-  // TODO
+  /* TODO */
   return 0;
 }
 
@@ -56,23 +56,23 @@ int insertText(
     size_t offset,
     char const *const text
 ) {
-  // TODO
+  /* TODO */
   return 0;
 }
 
 int deleteText(TextBuffer *const tb, TextBufferSpan span) {
-  // TODO
+  /* TODO */
   return 0;
 }
 
 /* Modify text buffer state */
 int undo(TextBuffer *const tb) {
-  // TODO
+  /* TODO */
   return 0;
 }
 
 int redo(TextBuffer *const tb) {
-  // TODO
+  /* TODO */
   return 0;
 }
 
@@ -83,12 +83,12 @@ int findText(
     TextBufferSpan span,
     char const *const text
 ) {
-  // TODO
+  /* TODO */
   return 0;
 }
 
 int getText(char *const dest, size_t destsz, TextBuffer const *const tb) {
-  // TODO
+  /* TODO */
   return 0;
 }
 
@@ -98,7 +98,7 @@ int getTextLine(
     TextBuffer const *const tb,
     size_t line
 ) {
-  // TODO
+  /* TODO */
   return 0;
 }
 
@@ -108,6 +108,6 @@ int getTextSpan(
     TextBuffer const *const tb,
     TextBufferSpan span
 ) {
-  // TODO
+  /* TODO */
   return 0;
 }

@@ -7,11 +7,14 @@ project (pieces
   LANGUAGES C
 )
 
+include (CTest)
+include (cmake/Libraries.cmake)
+
 set (CMAKE_C_STANDARD 90)
 set (CMAKE_C_STANDARD_REQUIRED 90)
 
 if (MSVC)
-  add_compile_options(
+  add_compile_options (
     /Wall
     /WX
     /wd4710
@@ -19,14 +22,15 @@ if (MSVC)
     /wd5045
     /wd4820
     /wd4706
+    /wd4255
     /Qspectre
   )
-  add_definitions(-D_CRT_SECURE_NO_WARNINGS)
-else()
-  add_compile_options(-Wall -Wextra -pedantic -Werror)
-endif()
+  add_definitions (-D_CRT_SECURE_NO_WARNINGS)
+else ()
+  add_compile_options (-Wall -Wextra -pedantic -Werror)
+endif ()
 
-add_library (pieces "")
+add_library (pieces STATIC "")
 
 target_include_directories (pieces
   PRIVATE
